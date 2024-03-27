@@ -60,7 +60,7 @@ def process_file(file_path):
     
     # 파일 내용 수정
     for line_number in modifications:
-        modify_lines(lines, line_number)  # 여기서 실제 내용을 수정
+        modify_line(lines, line_number)  # 여기서 실제 내용을 수정
 
     # 파일 쓰기
     with open(file_name, 'w') as file:
