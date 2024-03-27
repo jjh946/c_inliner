@@ -21,6 +21,7 @@ def compile_c_files(src_directory, build_directory):
         except subprocess.CalledProcessError as e:
             print(f'Compilation of {src_file} with "{command}" failed: {e}')
             continue
+            # 에러 무시하고 계속 진행
 
 if __name__ == "__main__":
     src_directory = '/home/junh/coreutils-9.3/src'
